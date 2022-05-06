@@ -1,7 +1,7 @@
 # 2048-HarmonyOS-Watch
 
 # Introduction
-2048 is an easy and fun single-player puzzle game. Number 2 or 4 will appear on two random squares at the start of the game. When swiping up, down, left and right to operate, the numbers on the screen will slide in the corresponding direction, the same numbers will be added together, and then randomly generate 2 or 4 on a blank grid. If the grid is full and the grid can no longer be merged by swiping, the game is over. You can play the game on Huawei HarmonyOS Watch 3.     
+2048 is an easy and fun puzzle game. Number 2 or 4 will appear on two random squares at the start of the game. When swiping up, down, left and right to operate, the numbers on the screen will slide in the corresponding direction, the same numbers will be added together, and then randomly generate 2 or 4 on a blank grid. If the grid is full and the grid can no longer be merged by swiping, the game is over. You can play the game on Huawei HarmonyOS Watch 3.     
 
 # Installation requirements
 Install Huawei DevEco Studio 3.0 Beta2 and set up the DevEco Studio development environment. The DevEco Studio development environment needs to depend on the network environment. It needs to be connected to the network to ensure the normal use of the tool.The development environment can be configured according to the following two situations: 1) If you can directly access the Internet, just download the HarmonyOS SDK; 2) If the network cannot access the Internet directly, it can be accessed through a proxy server • Generate secret key and apply for certificate
