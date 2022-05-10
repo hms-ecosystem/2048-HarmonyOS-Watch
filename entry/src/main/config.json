@@ -53,6 +53,18 @@
         "launchType": "standard"
       }
     ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.VIBRATE",
+        "reason": "",
+        "usedScene": {
+          "ability": [
+            ".MainAbility"
+          ],
+          "when": "inuse"
+        }
+      }
+    ],
     "js": [
       {
         "pages": [
