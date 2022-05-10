@@ -15,6 +15,8 @@
 
 import prompt from '@system.prompt';
 import storage from '@system.storage';
+import vibrator from '@system.vibrator';
+
 const gridBgColors = {
     "0": "#CDC1B4",
     "2": "#EEE4DA",
@@ -216,6 +218,18 @@ export default {
     },
     addScore(gridVal) {
         this.currentScore += gridVal;
+        vibrator.vibrate({
+            mode: 'short',
+            success: function(ret) {
+                console.log('vibrate is successful');
+            },
+            fail: function(ret) {
+                console.log('vibrate is failed');
+            },
+            complete: function(ret) {
+                console.log('vibrate is completed');
+            }
+        });
     },
     restart() {
         if (this.currentScore > this.bestScore) {
