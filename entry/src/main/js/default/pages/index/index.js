@@ -1,11 +1,9 @@
 /*
- * Copyright 2021. Futurewei Technologies Inc. All rights reserved.
+ * Copyright 2021. Lolay Inc. All rights reserved.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
+ * http://www.apache.org/licenses/LICENSE-2.0
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -62,6 +60,7 @@ export default {
     },
     onShow() {
         canvas = this.$element("canvas").getContext("2d");
+        // Draw Grid
         this.drawGrids();
     },
     initGrids() {
@@ -76,10 +75,13 @@ export default {
         for (let r = 0; r < 4; r++) {
             for (let c = 0; c < 4; c++) {
                 let gridVal = grids[r][c].toString();
+                // Draw Background
                 canvas.fillStyle = gridBgColors[gridVal];
                 let leftTopX = c * (gridWidth + gridMargin) + gridMargin;
                 let leftTopY = r * (gridWidth + gridMargin) + gridMargin;
+                // Left Top X, Left Top Y, Width, Height
                 canvas.fillRect(leftTopX, leftTopY, gridWidth, gridWidth);
+                // Draw Text
                 canvas.font = "24px";
                 if (gridVal != "0") {
                     if (gridVal == "2" || gridVal == "4") {
@@ -89,6 +91,7 @@ export default {
                     }
                     let offsetX = (4 - gridVal.length) * (gridWidth / 8);
                     let offsetY = (gridWidth - fontSize) / 2;
+                    // Text Left Top X, Left Top Y
                     canvas.fillText(gridVal, leftTopX + offsetX, leftTopY + offsetY + fontSize - 5);
                 }
             }
@@ -207,6 +210,7 @@ export default {
                 }
             }
         }
+
         let ranIdx = Math.floor(Math.random() * arr.length);
         let row = arr[ranIdx][0];
         let column = arr[ranIdx][1];
@@ -218,6 +222,7 @@ export default {
     },
     addScore(gridVal) {
         this.currentScore += gridVal;
+        //Add vibration
         vibrator.vibrate({
             mode: 'short',
             success: function(ret) {
@@ -231,6 +236,7 @@ export default {
             }
         });
     },
+
     restart() {
         if (this.currentScore > this.bestScore) {
             storage.set({
