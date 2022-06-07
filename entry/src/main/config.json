@@ -16,6 +16,7 @@
   "module": {
     "package": "com.game2048fw.hmos",
     "name": ".MyApplication",
+    "mainAbility": ".MainAbility",
     "deviceType": [
       "wearable"
     ],
@@ -51,6 +52,20 @@
         "label": "$string:app_name",
         "type": "page",
         "launchType": "standard"
+      },
+      {
+        "name": "com.huawei.hms.analytics.AnalyticsServiceAbility",
+        "icon": "$media:icon",
+        "visible":false,
+        "type": "service"
+      },
+      {
+        "permissions": [
+          "com.huawei.agconnect.core.DataAbilityShellProvider.PROVIDER"
+        ],
+        "name": "com.huawei.agconnect.core.provider.AGConnectInitializeAbility",
+        "type": "data",
+        "uri": "dataability://com.game2048fw.hmos.AGConnectInitializeAbility"
       }
     ],
     "reqPermissions": [
@@ -68,6 +83,7 @@
     "js": [
       {
         "pages": [
+          "pages/home/home",
           "pages/index/index"
         ],
         "name": "default",
