@@ -1,13 +1,26 @@
 apply plugin: 'com.huawei.ohos.hap'
+apply plugin: 'com.huawei.ohos.decctest'
+apply plugin: 'com.huawei.agconnect'
+
 ohos {
     compileSdkVersion 5
     defaultConfig {
         compatibleSdkVersion 5
     }
-
+    buildTypes {
+        release {
+            proguardOpt {
+                proguardEnabled false
+                rulesFiles 'proguard-rules.pro'
+            }
+        }
+    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar', '*.har'])
-    testCompile 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13'
+    ohosTestImplementation 'com.huawei.ohos.testkit:runner:2.0.0.100'
+
+    implementation 'com.huawei.hms:hianalytics-harmony:6.3.2.301'
 }
