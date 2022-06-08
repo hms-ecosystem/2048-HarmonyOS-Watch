@@ -57,11 +57,11 @@
 }
 .img {
     margin-top: 2px;
-    height: 100px;
-    width: 100px;
+    height: 300px;
+    width: 300px;
     animation-timing-function: linear;
     animation-duration: 3s;
-    animation-delay: 2s;
+    animation-delay: 0s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
 }
@@ -73,7 +73,7 @@
         transform: scale(0);
     }
     to {
-        transform: scale(3);
+        transform: scale(1);
     }
 }
 .footer {
