@@ -60,7 +60,6 @@ export default {
     },
     onShow() {
         canvas = this.$element("canvas").getContext("2d");
-        // Draw Grid
         this.drawGrids();
     },
     initGrids() {
@@ -75,13 +74,10 @@ export default {
         for (let r = 0; r < 4; r++) {
             for (let c = 0; c < 4; c++) {
                 let gridVal = grids[r][c].toString();
-                // Draw Background
                 canvas.fillStyle = gridBgColors[gridVal];
                 let leftTopX = c * (gridWidth + gridMargin) + gridMargin;
                 let leftTopY = r * (gridWidth + gridMargin) + gridMargin;
-                // Left Top X, Left Top Y, Width, Height
                 canvas.fillRect(leftTopX, leftTopY, gridWidth, gridWidth);
-                // Draw Text
                 canvas.font = "24px";
                 if (gridVal != "0") {
                     if (gridVal == "2" || gridVal == "4") {
@@ -91,7 +87,6 @@ export default {
                     }
                     let offsetX = (4 - gridVal.length) * (gridWidth / 8);
                     let offsetY = (gridWidth - fontSize) / 2;
-                    // Text Left Top X, Left Top Y
                     canvas.fillText(gridVal, leftTopX + offsetX, leftTopY + offsetY + fontSize - 5);
                 }
             }
@@ -222,7 +217,6 @@ export default {
     },
     addScore(gridVal) {
         this.currentScore += gridVal;
-        //Add vibration
         vibrator.vibrate({
             mode: 'short',
             success: function(ret) {
