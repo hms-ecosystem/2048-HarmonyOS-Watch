@@ -20,4 +20,5 @@ The demo code is licensed under the Apache License, version 2.0.
 
 # Gif
 
-![Game2048c](https://user-images.githubusercontent.com/97313676/172537984-a4103417-0f6b-4bd2-bcaa-a62a00c47cd3.gif)
+![Game2048e](https://user-images.githubusercontent.com/97313676/172987732-17d19d0b-61f0-4186-9d35-f5489c4477c2.gif)
+
