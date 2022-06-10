@@ -22,3 +22,8 @@ The demo code is licensed under the Apache License, version 2.0.
 
 ![Game2048e](https://user-images.githubusercontent.com/97313676/172987732-17d19d0b-61f0-4186-9d35-f5489c4477c2.gif)
 
+
+# Analytic Data
+
+<img src= https://user-images.githubusercontent.com/97313676/173105725-73e667b4-e71f-44a8-82c2-f43259516f67.png width="800" height="400">
+<img src= https://user-images.githubusercontent.com/97313676/173105770-7e48890d-e877-4f39-a6c2-9a35f4e1002b.png width="800" height="400">
