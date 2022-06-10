@@ -22,7 +22,7 @@
 .header {
     width: 200px;
     height: 80px;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 .score {
     width: 200px;
@@ -42,7 +42,7 @@
     height: 305px;
 }
 .content>canvas {
-    background-color: #B7ADA1;
+    background-color: #755207;
 }
 .content>div {
     width: 305px;
@@ -78,14 +78,14 @@
 }
 .footer {
     width: 150px;
-    height: 70px;
-    margin-top: 5px;
+    height: 60px;
+    margin-top: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .footer>button {
-    height: 50px;
+    height: 45px;
     width: 150px;
     background-color: #e67b09;
     text-color: #FFFFFF;

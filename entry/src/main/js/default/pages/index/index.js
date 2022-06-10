@@ -16,22 +16,22 @@ import storage from '@system.storage';
 import vibrator from '@system.vibrator';
 
 const gridBgColors = {
-    "0": "#CDC1B4",
-    "2": "#EEE4DA",
-    "4": "#EDE0C8",
-    "8": "#F2B179",
-    "16": "#F59563",
-    "32": "#F67C5F",
-    "64": "#F65E3B",
-    "128": "#EDCF72",
-    "256": "#EDCC61",
-    "512": "#99CC00",
-    "1024": "#83AF9B",
+    "0": "#422e03",
+    "2": "#3538f2",
+    "4": "#07ab4b",
+    "8": "#ab07a8",
+    "16": "#F65E3B",
+    "32": "#8a8506",
+    "64": "#e80909",
+    "128": "#0b7d22",
+    "256": "#910c0c",
+    "512": "#560896",
+    "1024": "#7ca308",
     "2048": "#0099CC"
 };
 const gridTxColors = {
-    "2": "#645B52",
-    "4": "#645B52",
+    "2": "#FFFFFF",
+    "4": "#FFFFFF",
     "others": "#FFFFFF"
 };
 var grids;
