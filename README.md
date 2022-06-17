@@ -14,7 +14,7 @@ Note that you can choose to run the hap package on the local emulator or the Hua
 The demo code is licensed under the Apache License, version 2.0.
 
 # Acknowledgements
-The code in this project has been modified from HarmonyOS open source demos and Huawei Analytics demo. Their contributions are greatly appreciated.
+The code in this project has been modified from HarmonyOS open source demo and Huawei Analytics demo. Their contributions are greatly appreciated.
 
 # Questions
 If you have a questions - Stack Overflow is the best place for any programming inquiries. Be sure to include the tag huawei-mobile-services.
